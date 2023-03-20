@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+
+ <g class="layer">
+  <title>Layer 1</title>
+  <circle cx="199.999982" cy="199.999995" fill="#000000" fill-opacity="0" id="svg_11" r="188.771469" stroke="#ef6500" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="19"/>
+  <polygon fill="#ef6500" id="svg_7"/>
+  <text fill="#ef6500" font-family="Fantasy" font-size="422" id="svg_1" stroke="#ef6500" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" text-anchor="middle" transform="matrix(0.996358, 0, 0, 0.996358, 17.6436, -77.0755)" x="181.517478" xml:space="preserve" y="431.324757">?</text>
+  <polygon cx="345.5" cy="-13.700012" edge="121.6863" fill="#ef6500" id="svg_3" orient="x" points="NaN,NaN " shape="regularPoly" sides="0" stroke="#ef6500" stroke-width="0" strokeWidth="0" strokecolor="#ef6500"/>
+  <polygon cx="506.5" cy="72.299988" edge="66.483081" fill="#ef6500" id="svg_4" orient="x" points="NaN,NaN " shape="regularPoly" sides="0" stroke="#ef6500" stroke-width="0" strokeWidth="0" strokecolor="#ef6500"/>
+  <polygon cx="-6.5" cy="23.299988" edge="0" fill="#ef6500" id="svg_5" orient="x" shape="regularPoly" sides="0" strokeWidth="0" strokecolor="#ef6500"/>
+  <polygon cx="-6.5" cy="23.299988" edge="0" fill="#ef6500" id="svg_6" orient="x" shape="regularPoly" sides="5" strokeWidth="0" strokecolor="#ef6500"/>
+ </g>
+</svg>

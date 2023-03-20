@@ -1,0 +1,198 @@
+.photogallery__container {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 120px;
+}
+
+.photogallery__flexContainer {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1360px;
+  width: 100%;
+}
+
+.photogallery__title {
+  font-family: 'Roboto-Regular';
+  font-size: 30px;
+  line-height: 33px;
+
+  text-align: center;
+  margin: 10px;
+}
+
+.photogallery__albumList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  margin: 20px 0;
+}
+
+.photogallery__albumItem {
+  display: flex;
+  flex-direction: column;
+  max-width: 330px;
+  height: 300px;
+}
+
+.photogallery__albumItem__title {
+  margin: 20px 0;
+
+  font-family: 'Roboto-Regular';
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.photogallery__albumItem__btn {
+  align-self: center;
+  position: relative;
+  display: block;
+  overflow: hidden;
+
+  padding: 6px 3px;
+  border: 2px solid #EF6500;
+  font-family: 'Roboto-Regular';
+  font-size: 18px;
+
+  background-color: white;
+  cursor: pointer;
+
+  transition: all .35s;
+}
+
+.photogallery__albumItem span{
+  position: relative;
+  z-index: 2;
+}
+
+.photogallery__albumItem__btn:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #EF6500;
+  transition: all .35s;
+}
+
+.photogallery__albumItem__btn:hover{
+  color: #fff;
+}
+
+.photogallery__albumItem__btn:hover:after{
+  width: 100%;
+}
+
+#photogallery__album__dom,
+#photogallery__album__predpriyatiye,
+#photogallery__album__budjet {
+  display: none;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 25px;
+
+  opacity: 0;
+  transition: all 0.5s;
+
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.photogallery__album__item {
+  width: 225px;
+  cursor: zoom-in;
+}
+
+/* Слайдер */
+
+.output {
+  position: fixed;
+  background: rgba(15, 17, 17, 0.9);
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+
+  display: flex;
+  justify-content: center;
+}
+
+.output__flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.output__img {
+  cursor: zoom-out;
+}
+
+.output__arrowLeft {
+  margin-right: 15px;
+
+  font-size: 30px;
+  padding: 10px 20px;
+  border: 2px solid #EF6500;
+  color: black;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 600;
+
+  position: relative;
+  display: block;
+  overflow: hidden;
+  transition: all .35s;
+}
+
+.output__arrowRight {
+  margin-left: 15px;
+
+  font-size: 30px;
+  padding: 10px 20px;
+  border: 2px solid #EF6500;
+  color: black;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 600;
+
+  position: relative;
+  display: block;
+  overflow: hidden;
+  transition: all .35s;
+}
+
+.output__arrowLeft:after,
+.output__arrowRight:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #EF6500;
+  transition: all .35s;
+}
+
+.output__arrowLeft:hover:after,
+.output__arrowRight:hover:after{
+  width: 100%;
+}
+
+.output__arrowLeft span,
+.output__arrowRight span{
+  position: relative;
+  z-index: 2;
+}
+
+.output__arrowLeft:hover,
+.output__arrowRight:hover{
+  color: #fff;
+}

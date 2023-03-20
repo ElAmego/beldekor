@@ -1,0 +1,68 @@
+.contacts__container {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 120px;
+}
+
+.contacts__flexContainer {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1360px;
+  width: 100%;
+}
+
+.contacts__title {
+  font-family: 'Roboto-Regular';
+  font-size: 30px;
+  line-height: 33px;
+
+  text-align: center;
+  margin: 10px; 
+}
+
+.contacts__dataMap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin-top: 10px;
+}
+
+.contacts__data {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.contacts__data__phonesTitle,
+.contacts__data__emailTitle,
+.contacts__data__addressTitle,
+.contacts__data__postTitle,
+.contacts__data__requisitesTitle,
+.contacts__data__socialTitle {
+  font-family: 'Roboto-Regular';
+  font-size: 22px;
+  font-weight: 600;
+  color: #EF6500;
+}
+
+.contacts__data__phoneA1,
+.contacts__data__phoneMts,
+.contacts__data__emailAddress,
+.contacts__data__oficeAddress,
+.contacts__data__postAddress,
+.contacts__data__requisitesNumber {
+  font-family: 'Roboto-Regular';
+  font-size: 18px;
+}
+
+.contacts__data__socialMediaLink {
+  text-decoration: none;
+}
+
+.contacts__data__socialMediaImg {
+  width: 40px;
+  border-radius: 10px;
+}

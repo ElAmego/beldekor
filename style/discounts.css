@@ -1,0 +1,76 @@
+.discounts__container {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 120px;
+}
+
+.discounts__flexContainer {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1000px;
+  width: 100%;
+}
+
+.discounts__title {
+  font-family: 'Roboto-Regular';
+  font-size: 30px;
+  line-height: 33px;
+  text-align: center;
+
+  margin: 10px;
+}
+
+.discount {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+
+  padding: 20px 30px;
+  margin-top: 10px;
+
+  background-color: #EF6500;
+}
+
+.discount__img {
+  width: 300px;
+
+  box-shadow: rgb(255, 255, 255) 0px 0px 25px 4px;
+}
+
+.discount__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.discount__descriptionNumber {
+  font-family: 'Montserrat-SemiBold';
+  font-size: 25px;
+  color: #FFFFFF;
+}
+
+.discount__descriptionText {
+  font-family: 'Montserrat-Regular';
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.discount__descriptionTime {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.discount__descriptionTime__logo {
+  width: 40px;
+}
+
+.discount__descriptionTime__text {
+  font-family: 'Montserrat-Regular';
+  font-size: 20px;
+  color: #FFFFFF;
+}
