@@ -55,3 +55,28 @@
   font-size: 20px;
   text-align: center;
 }
+
+/* Media Queries */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .process__list {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .process__list {
+    justify-content: center;
+  }  
+}
+
+@media (max-width: 767px) {
+  .process__list {
+    justify-content: center;
+  }  
+}
+
+@media (max-width: 480px) {
+  .process__list {
+    justify-content: center;
+  }  
+}

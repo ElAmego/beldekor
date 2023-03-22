@@ -50,10 +50,13 @@
                   <p class="header__info__cardText">
                     Пн – Пт: 9:00 – 19:00 <br>
                     Сб – Вс: 9:00 – 16:00
-
                   </p>
                 </div>
-               </div>
+              </div>
+
+              <div class="burger">
+                <span></span>
+              </div>
             </div>
 
             <nav class="header__navigation">
@@ -85,7 +88,7 @@
                 Вопросы
               </a>
   
-              <a href="contacts.html">
+              <a href="contacts.php">
                 Контакты
               </a>
             </nav>
@@ -146,6 +149,43 @@
         </div>
       </main>
 
+      <footer>
+        <div class="footer__container">
+          <div class="footer__flexContainer">
+            <div class="footer__info">
+              <div class="footer__info__card">
+                <img src="img/a1.png" alt="a1__logo" class="footer__info__logo">
+                <p class="footer__info__cardText">
+                  (044) 77-676-87
+                </p>
+              </div>
+
+              <div class="footer__info__card">
+                <img src="img/mts.png" alt="mts__logo" class="footer__info__mtsLogo">
+                <p class="footer__info__cardText">
+                  (029) 767-68-69
+                </p>
+              </div>
+
+              <div class="footer__info__card">
+                <img src="img/email.svg" alt="email__logo" class="footer__info__logo">
+                <p class="footer__info__cardText">
+                  info@beldekor.by
+                </p>
+              </div>
+
+              <div class="footer__info__card">
+                <img src="img/clock.svg" alt="clock__logo" class="footer__info__logo">
+                <p class="footer__info__cardText">
+                  Пн – Пт: 9:00 – 19:00 <br>
+                  Сб – Вс: 9:00 – 16:00
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
       <div class="output">
         <form class="addReview__form" action="getData/create.php" method="post">
           <h2 class="addReview__formTitle">
@@ -184,6 +224,8 @@
       </div>
     </div>
   </div>
+
   <script src="scripts/form.js"></script> 
+  <script src="scripts/burger.js"></script>
 </body>
 </html>

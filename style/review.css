@@ -11,6 +11,8 @@
 
   max-width: 900px;
   width: 100%;
+
+  margin: 0 20px;
 }
 
 .addReview__title {
@@ -90,7 +92,7 @@
 }
 
 .material-icons.yellow { 
-  color: rgb(239, 239, 48);
+  color: #FDA702;
   font-size: 32px; 
 }
 
@@ -181,6 +183,8 @@
   max-width: 900px;
   width: 100%;
   row-gap: 20px;
+
+  margin: 0 20px;
 }
 
 .allReviews__nameStars {
@@ -211,4 +215,68 @@
   display: flex;
   flex-direction: column;
   row-gap: 15px;
+}
+
+/* Media Queries */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .addReview__container {
+    margin-top: 80px;
+  }
+
+  .allReviews__container {
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .addReview__container {
+    margin-top: 80px;
+  }
+
+  .allReviews__container {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .addReview__container {
+    margin-top: 80px;
+  }
+
+  .allReviews__container {
+    margin-bottom: 80px;
+  }
+
+  .addReview__form {
+    width: 440px;
+  }
+
+  #addReview__form__review {
+    width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .addReview__container {
+    margin-top: 80px;
+  }
+
+  .allReviews__container {
+    margin-bottom: 80px;
+  }
+
+  .addReview__form {
+    width: 330px;
+  }
+
+  #addReview__form__review {
+    width: 290px;
+  }
+
+  .addReview__form__btns {
+    flex-direction: column;
+    row-gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
 }

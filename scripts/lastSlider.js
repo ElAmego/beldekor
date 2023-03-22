@@ -2,12 +2,27 @@
 
 const lastSlider = document.getElementById('last__sliderPolosa');
 const breakpoints = document.querySelectorAll('.last__slider__breakpoint');
-let lastSliderLeft = 0
+let lastSliderLeft = 0;
+let lastSliderStep = -420;
+
+function changeSizeLast(width) {
+  if ((width >= 992 && width <= 1199) || (width >= 0 && width <= 767)) {
+    lastSliderStep = -320;
+  } else if (width >= 768 && width <= 991) {
+    lastSliderStep = -220;
+  }
+}
+
+changeSizeLast(window.innerWidth);
+
+window.onresize = function() {
+  changeSizeLast(window.innerWidth);
+}
 
 setInterval(() => {
-  lastSliderLeft -= 420;
+  lastSliderLeft += lastSliderStep;
 
-  if (lastSliderLeft < -2100) {
+  if (lastSliderLeft < lastSliderStep*5) {
     lastSliderLeft = 0;
   }
 
@@ -20,7 +35,7 @@ setInterval(() => {
       break;
     };
 
-    case -420: {
+    case lastSliderStep*1: {
       breakpoints.forEach(element => {
         element.style.backgroundColor = '#FFFFFF';
       });
@@ -28,7 +43,7 @@ setInterval(() => {
       break;
     };
 
-    case -840: {
+    case lastSliderStep*2: {
       breakpoints.forEach(element => {
         element.style.backgroundColor = '#FFFFFF';
       });
@@ -36,7 +51,7 @@ setInterval(() => {
       break;
     };
 
-    case -1260: {
+    case lastSliderStep*3: {
       breakpoints.forEach(element => {
         element.style.backgroundColor = '#FFFFFF';
       });
@@ -44,7 +59,7 @@ setInterval(() => {
       break;
     };
 
-    case -1680: {
+    case lastSliderStep*4: {
       breakpoints.forEach(element => {
         element.style.backgroundColor = '#FFFFFF';
       });
@@ -52,7 +67,7 @@ setInterval(() => {
       break;
     };
 
-    case -2100: {
+    case lastSliderStep*5: {
       breakpoints.forEach(element => {
         element.style.backgroundColor = '#FFFFFF';
       });
@@ -82,7 +97,7 @@ for (let i = 0; i < breakpoints.length; i++) {
           element.style.backgroundColor = '#FFFFFF';
         });
         breakpoints[1].style.backgroundColor = '#EF6500';
-        lastSliderLeft = -420;
+        lastSliderLeft = lastSliderStep*1;
         break;
       };
 
@@ -91,7 +106,7 @@ for (let i = 0; i < breakpoints.length; i++) {
           element.style.backgroundColor = '#FFFFFF';
         });
         breakpoints[2].style.backgroundColor = '#EF6500';
-        lastSliderLeft = -840;
+        lastSliderLeft = lastSliderStep*2;
         break;
       };
 
@@ -100,7 +115,7 @@ for (let i = 0; i < breakpoints.length; i++) {
           element.style.backgroundColor = '#FFFFFF';
         });
         breakpoints[3].style.backgroundColor = '#EF6500';
-        lastSliderLeft = -1260;
+        lastSliderLeft = lastSliderStep*3;
         break;
       };
 
@@ -109,7 +124,7 @@ for (let i = 0; i < breakpoints.length; i++) {
           element.style.backgroundColor = '#FFFFFF';
         });
         breakpoints[4].style.backgroundColor = '#EF6500';
-        lastSliderLeft = -1680;
+        lastSliderLeft = lastSliderStep*4;
         break;
       };
 
@@ -118,7 +133,7 @@ for (let i = 0; i < breakpoints.length; i++) {
           element.style.backgroundColor = '#FFFFFF';
         });
         breakpoints[5].style.backgroundColor = '#EF6500';
-        lastSliderLeft = -2100;
+        lastSliderLeft = lastSliderStep*5;
         break;
       };
     };

@@ -49,6 +49,8 @@
   flex-direction: column;
   max-width: 1360px;
   width: 100%;
+
+  padding: 3px 25px;
 }
 
 .header__logoInfo {
@@ -123,4 +125,316 @@
 #active {
   font-weight: bold;
   color: #EF6500;
+}
+
+.burger {
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  z-index: 50;
+  width: 30px;
+  height: 18px;
+}
+
+.burger span {
+  height: 2px;
+  width: 80%;
+  transform: scale(1);
+  background-color: #000000;
+}
+
+.burger::before, .burger::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #000000;
+  transition: all 0.3s ease 0s;
+}
+
+.burger::before { top: 0 }
+
+.burger::after { bottom: 0 }
+
+.burger.active span { transform: scale(0) }
+
+.burger.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+
+.open {
+  display: flex !important;
+}
+
+.full {
+  height: 100vh;
+}
+
+/* footer */
+
+.footer__container {
+  display: none;
+  justify-content: center;
+
+  padding: 10px 0;
+
+  position: fixed;
+  z-index: 3;
+  bottom: 0;
+  background-color: #FFF;
+  width: 100%;
+  box-shadow: 0px -5px 10px 2px rgba(34, 60, 80, 0.2);
+  }
+
+.footer__flexContainer {
+  display: flex;
+  justify-content: center;
+  max-width: 1360px;
+  width: 100%;
+
+  margin: 0 20px;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: row ;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.footer__info__card {
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+}
+
+.footer__info__logo {
+  width: 25px;
+}
+
+.footer__info__mtsLogo {
+  height: 30px;
+}
+
+.footer__info__cardText {
+  font-family: 'Roboto-Regular';
+  font-size: 14px; 
+}
+
+/* Media Queries */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .header__container {
+    padding-bottom: 0;
+  }
+
+  .header__flexContainer {
+    row-gap: 20px;
+    padding: 4px 25px;
+  }
+
+  .header__logo {
+    width: 220px;
+  }
+
+  .header__info {
+    display: none;
+  }
+
+  .header__navigation {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    animation: burgerAnimation 0.4s;
+    row-gap: 15px;
+    align-items: center;
+  }
+
+  /* .header__navigation > a::before {
+    border-bottom: none;
+  } */
+
+  .header__navigation > a {
+    font-size: 22px;
+  }
+
+  .burger { display: flex; }
+
+  .footer__container {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) { 
+  .header__container {
+    padding-bottom: 0;
+  }
+
+  .header__flexContainer {
+    row-gap: 20px;
+    padding: 4px 25px;
+  }
+
+  .header__logo {
+    width: 220px;
+  }
+
+  .header__info {
+    display: none;
+  }
+
+  .header__navigation {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    animation: burgerAnimation 0.4s;
+    row-gap: 15px;
+    align-items: center;
+  }
+
+  /* .header__navigation > a::before {
+    border-bottom: none;
+  } */
+
+  .header__navigation > a {
+    font-size: 22px;
+  }
+
+  .burger { display: flex; }
+
+  .footer__container {
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__container {
+    padding-bottom: 0;
+  }
+
+  .header__flexContainer {
+    row-gap: 20px;
+    padding: 4px 25px;
+  }
+
+  .header__logo {
+    width: 220px;
+  }
+
+  .header__info {
+    display: none;
+  }
+
+  .header__navigation {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    animation: burgerAnimation 0.4s;
+    row-gap: 15px;
+    align-items: center;
+  }
+
+  /* .header__navigation > a::before {
+    border-bottom: none;
+  } */
+
+  .header__navigation > a {
+    font-size: 22px;
+  }
+
+  .burger { display: flex; }
+
+  .footer__container {
+    display: flex;
+  }
+
+  .footer__info {
+    column-gap: 15px;
+    row-gap: 10px;
+    justify-content: center;
+  }
+
+  .footer__info__mtsLogo {
+    height: 24px;
+  }
+
+  .footer__info__logo {
+    width: 20px;
+  }
+
+  .footer__info__cardText {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__container {
+    padding-bottom: 0;
+  }
+
+  .header__flexContainer {
+    row-gap: 20px;
+    padding: 4px 25px;
+  }
+
+  .header__logo {
+    width: 220px;
+  }
+
+  .header__info {
+    display: none;
+  }
+
+  .header__navigation {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    animation: burgerAnimation 0.4s;
+    row-gap: 15px;
+    align-items: center;
+  }
+
+  /* .header__navigation > a::before {
+    border-bottom: none;
+  } */
+
+  .header__navigation > a {
+    font-size: 22px;
+  }
+
+  .burger { display: flex; }
+
+  .footer__container {
+    display: flex;
+  }
+
+  .footer__info {
+    column-gap: 30px;
+    row-gap: 10px;
+    justify-content: center;
+  }
+
+  .footer__info__mtsLogo {
+    height: 20px;
+  }
+
+  .footer__info__logo {
+    width: 18px;
+  }
+
+  .footer__info__cardText {
+    font-size: 10px;
+  }
+}
+
+@keyframes burgerAnimation {
+  from { opacity: 0 }
+  to { opacity: 1 }
 }

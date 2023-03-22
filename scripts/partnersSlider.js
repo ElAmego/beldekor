@@ -1,13 +1,14 @@
 "use strict"
 
-const poloska = document.getElementById('partners__sliderPolosa');
-let left = 0;
+const partnersSlider = document.getElementById('partners__sliderPolosa');
+let partnerSliderLeft = 0;
+let partnerSliderStep = -190;
 
 setInterval(() => {
-  left -= 190;
-  if (left < -2280) {
-    left = 0;
+  partnerSliderLeft += partnerSliderStep;
+  if (partnerSliderLeft < partnerSliderStep*12) {
+    partnerSliderLeft = 0;
   }
 
-  poloska.style.left = left+'px';;
+  partnersSlider.style.left = partnerSliderLeft+'px';;
   }, 2500);

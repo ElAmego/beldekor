@@ -11,6 +11,8 @@
 
   max-width: 1000px;
   width: 100%;
+
+  margin: 0 20px;
 }
 
 .discounts__title {
@@ -20,6 +22,12 @@
   text-align: center;
 
   margin: 10px;
+}
+
+.discounts__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
 .discount {
@@ -73,4 +81,54 @@
   font-family: 'Montserrat-Regular';
   font-size: 20px;
   color: #FFFFFF;
+}
+
+/* Media Queries */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .discounts__container {
+    margin: 80px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .discounts__container {
+    margin: 80px 0;
+  }
+
+  .discount__description {
+    justify-content: space-between;
+  }
+
+  .discount__img {
+    width: 250px;
+  }
+  
+  .discount__descriptionNumber {
+    font-size: 23px;
+  }
+
+  .discount__descriptionText,
+  .discount__descriptionTime__text {
+    font-size: 18px;
+  }
+
+  .discount__descriptionTime__logo {
+    width: 38px;
+  }
+}
+
+@media (max-width: 767px) {
+  .discounts__container {
+    margin: 80px 0;
+  }
+
+  .discount__description {
+    row-gap: 10px;
+  }
+
+  .discount {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
 }

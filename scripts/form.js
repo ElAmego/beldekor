@@ -23,15 +23,15 @@ function openWindow() {
 
 let errors = 0;
 
-nameInput.oninput = function() {
-  validatename();
+nameInput.onblur = function() {
+  validateName();
 }
 
-reviewInput.oninput = function() {
-  validatereview();
+reviewInput.onblur = function() {
+  validateReview();
 }
 
-function validatename() {
+function validateName() {
   let nameInputValue = nameInput.value;
 
   if (nameInputValue.length === 0 || nameInputValue.length >= 20) {
@@ -42,7 +42,7 @@ function validatename() {
   }
 }
 
-function validatereview() {
+function validateReview() {
   let reviewInputValue = reviewInput.value;
 
   if (reviewInputValue.length === 0) {
@@ -56,8 +56,8 @@ function validatereview() {
 function validate(e) {
   errors = 0;
 
-  validatename();
-  validatereview();
+  validateName();
+  validateReview();
 
   starsInput.value = starsCount+1;
 

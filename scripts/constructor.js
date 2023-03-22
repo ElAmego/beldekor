@@ -12,7 +12,7 @@ constructorItems.className = 'constructor__modelItems';
 constructor.appendChild(constructorItems);
 
 const constructorRamkaTitle = document.createElement('p');
-constructorRamkaTitle.className = 'constructor__title';
+constructorRamkaTitle.className = 'constructor__name';
 constructorRamkaTitle.textContent = 'Цвета рамки';
 constructorItems.appendChild(constructorRamkaTitle);
 
@@ -23,7 +23,7 @@ constructorItems.appendChild(frameList);
 //-------------------------------------------------------------
 
 const constructorRamkaTitle1 = document.createElement('p');
-constructorRamkaTitle1.className = 'constructor__title';
+constructorRamkaTitle1.className = 'constructor__name';
 constructorRamkaTitle1.textContent = 'Виды перфорации';
 constructorItems.appendChild(constructorRamkaTitle1);
 
@@ -34,7 +34,7 @@ constructorItems.appendChild(perforationTypeList);
 //--------------------------------------------------------------
 
 const constructorRamkaTitle2 = document.createElement('p');
-constructorRamkaTitle2.className = 'constructor__title';
+constructorRamkaTitle2.className = 'constructor__name';
 constructorRamkaTitle2.textContent = 'Цвета перфорации';
 constructorItems.appendChild(constructorRamkaTitle2);
 
