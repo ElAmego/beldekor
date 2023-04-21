@@ -199,7 +199,8 @@
 
 @media (max-width: 767px) {
   .contacts__container {
-    margin: 80px 0;
+    margin-top: 80px;
+    margin-bottom: 100px;
   }
 
   .contacts__dataMap {
@@ -216,7 +217,8 @@
 
 @media (max-width: 480px) {
   .contacts__container {
-    margin: 80px 0;
+    margin-top: 80px;
+    margin-bottom: 100px;
   }
 
   .contacts__dataMap {

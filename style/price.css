@@ -35,7 +35,7 @@
 .price__list {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -79,6 +79,8 @@
 
 .finished__list {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   flex-direction: row;
   column-gap: 20px;
   row-gap: 20px;
@@ -203,7 +205,7 @@
   }
 
   .advantages__container {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
   }
 }
 
@@ -230,6 +232,6 @@
   }
 
   .advantages__container {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
   }
 }

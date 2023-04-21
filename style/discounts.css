@@ -92,7 +92,8 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
   .discounts__container {
-    margin: 80px 0;
+    margin-top: 80px;
+    margin-bottom: 100px;
   }
 
   .discount__description {
@@ -119,7 +120,8 @@
 
 @media (max-width: 767px) {
   .discounts__container {
-    margin: 80px 0;
+    margin-top: 80px;
+    margin-bottom: 100px;
   }
 
   .discount__description {
